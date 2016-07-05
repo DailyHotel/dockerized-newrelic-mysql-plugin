@@ -1,0 +1,18 @@
+{
+  "agents": [
+    {
+      "name"    : "Master",
+      "host"    : "db.master.com",
+      "metrics" : "status,newrelic,buffer_pool_stats,innodb_metrics,innodb_mutex,innodb_status,master",
+      "user"    : "root",
+      "passwd"  : "YOUR_PASSWORD"
+    },
+    {
+      "name"    : "Slave",
+      "host"    : "db.slave.com",
+      "metrics" : "status,newrelic,buffer_pool_stats,innodb_metrics,innodb_mutex,innodb_status,slave",
+      "user"    : "root",
+      "passwd"  : "YOUR_PASSWORD"
+    },
+  ]
+}

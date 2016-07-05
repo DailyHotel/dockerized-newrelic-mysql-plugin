@@ -1,0 +1,9 @@
+version: '2'
+services:
+  newrelic:
+    image: andromedarabbit/newrelic-mysql-plugin
+    environment:
+      LICENSE_KEY: YOUR_KEY
+    volumes:
+      - ./data:/data
+    # restart: always
